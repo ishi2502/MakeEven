@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make-even</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="firebase/login.js"></script>
+    <script type="module" src="firebase/login-logout-btn.js"></script>
+    <script type="module" src="firebase/search.js"></script>
+    <script type="module" src="firebase/forum.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <span class="login_button_container"><button class="Login_button" onclick="location.href='login.html' "
+                        id="Login_button">
+                        Login
+                    </button></span>
+                <span class="login_button_container">
+                    <button id="profile-button" onclick="location.href='profile.html' ">
+                        <span><img src="assets/user.png" id="profile-picture"></span>
+                    </button>
+                </span>
+            </ul>
+            <a href="index.html">
+                <img class="logo" style="height:3rem;" src="assets/logo.png">
+            </a>
+        </div>
+    </nav>
+
+    <div class="login-wrapper">
+        <div class="login_container">
+            <div class="login_img_container">
+                <img class="login_img" src="assets/login_img_prev_ui.png" />
+            </div>
+            <div class="login_form_container">
+                <div class="login_form">
+                    <div class="form_item">
+                        <label class="userid login_form_label">Username</label>
+                        <input type="text" class="userid_input login_input form-control" id="login_email"
+                            placeholder="Enter username" />
+                    </div>
+                    <div class="form_item">
+                        <label class="passwrd login_form_label">Password</label>
+                        <input class="pswrd_input login_input form-control" type="password" id="login_password"
+                            placeholder="Enter password" />
+                    </div>
+                    <div class="login_switch">
+                        <a href="forgetpass.html">Forgot Password</a>
+                    </div>
+                    <button id="login">
+                        LOGIN
+                    </button>
+                </div>
+
+                <h6>-------or continue with-------</h6>
+
+                <div id="loginwithgo">
+                    <a id="googlesignin">Join using google</a>
+                    <img
+                        src="https://img.icons8.com/external-those-icons-flat-those-icons/24/null/external-Google-logos-and-brands-those-icons-flat-those-icons.png" />
+                </div>
+
+                <div id="loginwithfb">
+                    <a id="facebooksignin">Join using facebook</a>
+                    <img src="https://img.icons8.com/fluency/48/null/facebook-new.png" />
+                </div>
+                <span class="create_acc">New user? <a href="signup.html"> Create Account Here</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

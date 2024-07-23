@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAKE EVEN</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="firebase/config.js"></script>
+    <script type="module" src="firebase/login-logout-btn.js"></script>
+    <script type="module" src="firebase/search.js"></script>
+
+</head>
+
+<body>
+    <!-- ....................................................NAVBAR...................................... -->
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="./chat.html">Chat</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <span class="login_button_container"><button class="Login_button" onclick="location.href='login.html' "
+                        id="Login_button">
+                        Login
+                    </button></span>
+                <span class="login_button_container">
+                    <button id="profile-button" onclick="location.href='profile.html' ">
+                        <span><img src="assets/user.png" id="profile-picture"></span>
+                    </button>
+
+                </span>
+            </ul>
+            <a href="index.html">
+                <img class="logo" style="height:3rem;" src="assets/logo.png">
+            </a>
+        </div>
+    </nav>
+
+
+    <header>
+        <div id="head-left">
+            <h1>Lets</h1>
+            <h1>Make it</h1>
+            <h1>Even!</h1>
+            <p>A platform to connect emerging with the experienced.</p>
+            <div id="head-img-wrap">
+                <img src="assets/old-person.png" />
+                <img src="assets/young-person.png" />
+            </div>
+            <button class="start-btn">Get started</button>
+        </div>
+        <div id="head-right">
+            <img src="assets/head-img.png" />
+        </div>
+    </header>
+
+    <section id="section1">
+        <div id="section1-imgwrap">
+            <img id="section1-img" src="assets/landingBanner.jpeg" />
+        </div>
+
+        <div id="section1-inner">
+            <div id="section1-parts">
+                <h1>What it is?</h1>
+                <p>
+                    Make even is a platform that bridges the generation gap between Gen X and Gen Z with meaningful
+                    connections that inspire and empower both groups.
+                </p>
+            </div>
+            <div id="section1-parts">
+                <h1>Why it matters?</h1>
+                <p>
+                    Establish meaningful relationships & helps create a powerful and dynamic force that uplifts and
+                    enriches both generations.
+                </p>
+            </div>
+        </div>
+        <div id="section1-qu">
+            <p id="section1-q1">Discover the magic of intergenerational bonds</p>
+            <p id="section1-q2"><i>Connect deeply and learn from the wisdom of people across all ages!</i></p>
+        </div>
+    </section>
+
+    <section id="section2">
+        <h2>Who can use it? </h2>
+        <div id="section2-inside">
+            <div class="rectangle">
+                <img class="circle" src="assets/young-person.png">
+                <h3>Young</h3>
+                <p>Talk and learn from experience your elders have had</p>
+            </div>
+            <div class="rectangle">
+                <img class="circle" src="assets/old-person.png">
+                <h3>Old</h3>
+                <p> Learn trending stuffs from the trendsetters themselves.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <h1>Key features</h1>
+        <div id="features-wrapper">
+            <img id="feature-hero-img" src="assets/generation_gap.jpg">
+            <div id="feature">
+                <ul>
+                    <li>
+                        <img id="feature-icon" src="assets/findpeople.png">
+                        <div id="feature-description">
+                            <h3>Find people</h3>
+                            <p>Browse through profiles of seasoned individuals and connect with the wisdom of the ages
+                            </p>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <img id="feature-icon" src="assets/chaticon.png">
+                        <div id="feature-description">
+                            <h3>Chat</h3>
+                            <p>Communicate with others and build meaningful relationships despite being from different
+                                generations</p>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <img id="feature-icon" src="assets/forumicon.png">
+                        <div id="feature-description">
+                            <h3>Ask & Answer</h3>
+                            <p>Engage in conversations & share your opinions on various topics, fostering a sense of
+                                community and understanding</p>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <img id="feature-icon" src="assets/minimal.png">
+                        <div id="feature-description">
+                            <h3>Minimalist</h3>
+                            <p>Clean uncluttered layout with simple typography and a straightforward navigation system
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="section4">
+        <h2>How it happens?</h2>
+        <div id="img-wrapper">
+            <div id="demo-imgwrap">
+                <img id="demo-img" src="assets/createacc.png" />
+                <h3>Create account</h3>
+            </div>
+            <img id="arrow-img" src="assets/arrow.png" />
+            <div id="demo-imgwrap">
+                <img id="demo-img" src="assets/connect.png" />
+                <h3>Find connections</h3>
+            </div>
+            <img id="arrow-img" src="assets/arrow.png" />
+            <div id="demo-imgwrap">
+                <img id="demo-img" src="assets/relations.png" />
+                <h3>Build relations</h3>
+            </div>
+        </div>
+        <button class="start-btn">Get started</button>
+    </section>
+
+    <footer>
+        <h3>© 2023 Make-even | All rights reserved</h3>
+    </footer>
+
+</body>
+
+</html>

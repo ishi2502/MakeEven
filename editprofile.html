@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make-even</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="editprofile.css">
+    <script type="module" src="firebase/editprofile.js"></script>
+    <script type="module" src="firebase/login-logout-btn.js"></script>
+    <script type="module" src="firebase/search.js"></script>
+    <script type="module" src="firebase/forum.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <span class="login_button_container"><button class="Login_button" onclick="location.href='login.html' "
+                        id="Login_button">
+                        Login
+                    </button></span>
+                <span class="login_button_container">
+                    <button id="profile-button" onclick="location.href='profile.html' ">
+                        <span><img src="assets/user.png" id="profile-picture"></span>
+                    </button>
+                </span>
+            </ul>
+            <a href="index.html">
+                <img class="logo" style="height:3rem;" src="assets/logo.png">
+            </a>
+        </div>
+    </nav>
+
+    <div id="profile-header">
+        <div id="formm">
+            <div id="profile-head">
+                <h2>Edit profile</h2>
+                <p>Your details will not be disclosed anywhere</p>
+            </div>
+            <div id="form-details">
+                <div id="profile-wrap">
+                    <div id="profile">
+                        <label for="fileToUpload" id="-label">
+                            <div class="profile-pic">
+                                <span class="glyphicon glyphicon-camera"></span>
+                                <span>Change Image</span>
+                            </div>
+                        </label>
+                        <input type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+                        <img src="assets/user.png" id="output" width="150px">
+                    </div>
+                    <button id="removeimg">Remove</button>
+                </div>
+                <div id="form-inputs">
+
+                    <div id="full-name">
+                        <div id="entry-wrap">
+                            <label id="form-labels">First Name*</label>
+                            <input id="form-input" class="firstname" type="text" name="firstname" placeholder="Andrew"
+                                required>
+                        </div>
+
+                        <div id="entry-wrap">
+                            <label id="form-labels">Last Name</label>
+                            <input id="form-input" class="lastname" type="text" name="lastname" placeholder="Johnson">
+                        </div>
+                    </div>
+
+                    <div id="entry-wrap">
+                        <label id="form-labels">Phone Number</label>
+                        <input id="form-input" class="phoneno" type="tel" name="lastname" placeholder="98XXXXXX93">
+                    </div>
+
+                    <div id="address">
+                        <div id="entry-wrap">
+                            <label id="form-labels">Country*</label>
+                            <input id="form-input" class="country" type="text" name="country"
+                                placeholder="United States of America" required>
+                        </div>
+
+                        <div id="entry-wrap">
+                            <label id="form-labels">State*</label>
+                            <input id="form-input" class="state" type="text" name="state" placeholder="Arizona"
+                                required>
+                        </div>
+                    </div>
+
+                    <div id="form-radio">
+                        <label id="form-labels">Which age group do you fall into?*</label>
+                        <div>
+                            <label>
+                                <input type="radio" id="young" class="age-option" name="age-group" value="young">
+                                <img src="assets/young-person.png">
+                            </label>
+                            <label>
+                                <input type="radio" id="old" class="age-option" name="age-group" value="old">
+                                <img src="assets/old-person.png">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="entry-wrap">
+                        <label id="form-labels">Tell us a bit about yourself</label>
+                        <textarea rows="7" cols="50" class="bio"></textarea>
+                    </div>
+                    <button id="submit-btn" type="submit">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

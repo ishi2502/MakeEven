@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="right_body">
+        <div id="rcvr_details">
+            <div id="rcvr">
+                <img id="rcvr_pic" src="./assets/user.png" alt="">
+                <div id="rcvr_name"></div>
+            </div>
+            <div>
+                <div class="dropup">
+                    <button class="dropbtn">
+                        <img src="./assets/3dots.png">
+                    </button>
+                    <div class="dropup-content">
+                        <a id="vprofile" href="#">View Profile</a>
+                        <a id="dchat" href="#">Delete chat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="chat">
+            
+        </div>
+        <div id="write_msg_body">
+            <img id="send_msg_icon" src="./assets/send_msg_icon.png">
+            <input id="write_msg" type="text" placeholder="Write message " autocomplete="off">
+        </div>
+    </div>
+    <script src="firebase/chatapp.js" type="module"></script>
+   
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="firebase/config.js"></script>
+    <script type="module" src="firebase/login-logout-btn.js"></script>
+    <title>Forum</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <span class="login_button_container"><button class="Login_button" onclick="location.href='login.html' "
+                        id="Login_button">
+                        Login
+                    </button></span>
+                <span class="login_button_container">
+                    <button id="profile-button" onclick="location.href='profile.html' ">
+                        <span><img src="assets/user.png" id="profile-picture"></span>
+                    </button>
+                </span>
+            </ul>
+            <img class="logo" style="height:3rem;" src="assets/logo.png">
+        </div>
+    </nav>
+    <div class="firstHalf">
+    </div>
+    <div class="secondHalf">
+        <!-- <div class="PageChoice">
+            <a href="#">Order By</a>
+        </div> -->
+        <div id="addques">
+            Add a question<span class="plus"></span>
+        </div>
+        <div id="questionSection">
+            <!-- <div class="questioncard">
+                <div style="margin-right: 20px;">
+                    <img src="assets/logo.png" width="70px" height="60px">
+                </div>
+                <div class="addcontent">
+                    <form>
+                        <input type="text" placeholder="Add question title">
+                        <textarea placeholder="Add a brief introduction to the problem" cols="65" rows="10"></textarea>
+                        <div>
+                            <button>Add Question</button>
+                        </div>
+                        <form>
+                </div>
+            </div> -->
+            <!-- <div class="questionElement">
+                <div style="margin-right: 20px;"><img src="assets/logo.png" width="70px" height="60px"></div>
+                <div>
+                    <p class="uname">Name</p>
+                    <p class="qTime">Time</p>
+                    <p class="qTitle">What is your question ?</p>
+                    <p class="qDesc">Question Description</p>
+                    <div class="qeleBtn">
+                        <button><i class="fa fa-wechat" style="font-size:15px"></i></button>
+                        <button>Add Response</button>
+                    </div>
+                </div>
+                <div class="ansInputBox"></div>
+            </div> -->
+            <!-- <div class="ansInput">
+                <div><img src="assets/logo.png" class="qimg"></div>
+                <div>
+                    <textarea placeholder="Add your answer here" cols="90" rows="7" max-length="500"></textarea>
+                </div>
+                <div class="ansBtn">
+                    <button>
+                        SUBMIT
+                    </button>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+    <script type="module" src="firebase/forum.js"></script>
+</body>
+
+</html>

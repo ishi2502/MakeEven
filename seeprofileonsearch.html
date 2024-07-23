@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make-even</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="editprofile.css">
+    <link rel="stylesheet" href="seeprofile.css">
+    <script type="module" src="firebase/login-logout-btn.js"></script>
+    <script type="module" src="firebase/seeprofile.js"></script>
+</head>
+
+<style>
+    @media screen and (max-width:800px) {
+        #profile-header {
+            height: 95vh;
+            margin-top: 5vh;
+        }
+    }
+</style>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <span class="login_button_container"><button class="Login_button" onclick="location.href='login.html' "
+                        id="Login_button">
+                        Login
+                    </button></span>
+                <span class="login_button_container">
+                    <button id="profile-button" onclick="location.href='profile.html' ">
+                        <span><img src="assets/user.png" id="profile-picture"></span>
+                    </button>
+                </span>
+                </span>
+            </ul>
+            <a href="index.html">
+                <img class="logo" style="height:3rem;" src="assets/logo.png">
+            </a>
+        </div>
+    </nav>
+
+    <div id="profile-header">
+        <div id="formm">
+
+            <div id="form-inputs">
+
+                <div id="full-name">
+                    <div id="entry-wrap">
+                        <input id="form-input" style="background-color: trans;" class="firstname" type="text"
+                            placeholder="Andrew" required>
+                        <h1 class="fullname">Name</h1>
+                    </div>
+
+                    <div id="entry-wrap">
+                        <input id="form-input" class=" lastname" type="text" placeholder="Johnson">
+                    </div>
+                </div>
+
+                <div id="address">
+                    <div id="entry-wrap">
+                        <label id="form-labels">Country</label>
+                        <input id="form-input" class=" country" type="text" placeholder="United States of America"
+                            required>
+                    </div>
+
+                    <div id="entry-wrap">
+                        <label id="form-labels">State</label>
+                        <input id="form-input" class=" state" type="text" placeholder="Arizona" required>
+                    </div>
+                </div>
+
+                <div id="entry-wrap">
+                    <label id="form-labels">Bio</label>
+                    <textarea class="bio"></textarea>
+                </div>
+
+                <div id="entry-wrap">
+                    <p id="friends"></p>
+                </div>
+
+                <div id="entry-wrap">
+                    <p id="logintime"></p>
+                </div>
+
+                <button id="chatbtn"><span><img src="assets/chat.png"></span>Chat with me</button>
+            </div>
+
+            <div id="profile">
+                <label for="fileToUpload" id="-label">
+                    <div class="profile-pic">
+
+                    </div>
+                </label>
+                <img src="https://cdn.pixabay.com/photo/2017/08/06/21/01/louvre-2596278_960_720.jpg" id="output"
+                    width="150px" />
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

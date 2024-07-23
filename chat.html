@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./firebase/login-logout-btn.js"></script>
+</head>
+
+<body>
+    <!-- ....................................................NAVBAR...................................... -->
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./search.html">Search</a></li>
+                <li><a href="./chat.html">Chat</a></li>
+                <li><a href="./forum.html">Forum</a></li>
+                <span class="login_button_container"><button class="Login_button" onclick="location.href='login.html' "
+                        id="Login_button">
+                        Login
+                    </button></span>
+                <span class="login_button_container">
+                    <button id="profile-button" onclick="location.href='profile.html' ">
+                        <span><img src="assets/user.png" id="profile-picture"></span>
+                    </button>
+                </span>
+            </ul>
+            <img class="logo" style="height:3rem;" src="assets/logo.png">
+        </div>
+    </nav>
+
+
+    <div id="chat_body">
+        <div id="left_body">
+            <div id="user_search_container">
+                <img src="assets/search_icon.png">
+                <input id="search_user" type="text" placeholder="Search">
+            </div>
+            <div id="users">
+                <ul id="users_list">
+
+                </ul>
+            </div>
+        </div>
+        <iframe src=""></iframe>
+    </div>
+    <script src="./firebase/chatusers.js" type="module"></script>
+
+
+</body>
+
+</html>

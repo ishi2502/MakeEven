@@ -1,0 +1,41 @@
+#Logout-btn{
+    width:40%;
+    font-size: 1rem;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 0, 0, 0.671);
+    color:white;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profile {
+    cursor: auto;
+}
+
+#Logout-btn:hover{
+    background-color: var(--bg-color);
+    color: black;
+}
+
+#profile img{
+    border:0.2rem solid var(--primaryclr);
+}
+
+#-label{
+    cursor:auto;
+}
+#-label:hover{
+    background-color: transparent;
+}
+
+
+@media screen and (max-width:550px) {
+
+    #Logout-btn{
+        width:80%;
+        margin: 1rem 0;
+    }
+}

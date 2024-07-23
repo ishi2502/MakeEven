@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make-even</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="editprofile.css">
+    <link rel="stylesheet" href="seeprofile.css">
+    <script type="module" src="firebase/search.js"></script>
+    <script type="module" src="firebase/login-logout-btn.js"></script>
+    <script type="module" src="firebase/seeprofile.js"></script>
+    <script type="module" src="firebase/forum.js"></script>
+</head>
+
+<body>
+    <div id="profile-header">
+        <div id="formm">
+
+            <div id="form-inputs">
+
+                <div id="full-name">
+                    <div id="entry-wrap">
+                        <input id="form-input" style="background-color: trans;" class="firstname" type="text"
+                            placeholder="Andrew" required>
+                        <h1 class="fullname">Name</h1>
+                    </div>
+
+                    <div id="entry-wrap">
+                        <input id="form-input" class=" lastname" type="text" placeholder="Johnson">
+                    </div>
+                </div>
+
+                <div id="address">
+                    <div id="entry-wrap">
+                        <label id="form-labels">Country</label>
+                        <input id="form-input" class=" country" type="text" placeholder="United States of America"
+                            required>
+                    </div>
+
+                    <div id="entry-wrap">
+                        <label id="form-labels">State</label>
+                        <input id="form-input" class=" state" type="text" placeholder="Arizona" required>
+                    </div>
+                </div>
+
+                <div id="entry-wrap">
+                    <label id="form-labels">Bio</label>
+                    <textarea class="bio"></textarea>
+                </div>
+
+                <div id="entry-wrap">
+                    <p id="friends"></p>
+                </div>
+
+                <div id="entry-wrap">
+                    <p id="logintime"></p>
+                </div>
+
+            </div>
+
+            <div id="profile">
+                <label for="fileToUpload" id="-label">
+                    <div class="profile-pic">
+
+                    </div>
+                </label>
+                <img src="https://cdn.pixabay.com/photo/2017/08/06/21/01/louvre-2596278_960_720.jpg" id="output"
+                    width="150px" />
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

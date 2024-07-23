@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="firebase/config.js"></script>
+    <script type="module" src="firebase/login-logout-btn.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Search Page</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <span class="login_button_container"><button class="Login_button" onclick="location.href='login.html' "
+                        id="Login_button">
+                        Login
+                    </button></span>
+                <span class="login_button_container">
+                    <button id="profile-button" onclick="location.href='profile.html' ">
+                        <span><img src="assets/user.png" id="profile-picture"></span>
+                    </button>
+                </span>
+                </span>
+            </ul>
+            <a href="index.html">
+                <img class="logo" style="height:3rem;" src="assets/logo.png">
+            </a>
+        </div>
+    </nav>
+    <div class="box">
+        <input type="text" id="myInput" placeholder="Search by name">
+        <div id="elements">
+
+        </div>
+    </div>
+    <footer>
+        <h3>© 2023 Make-even | All rights reserved</h3>
+    </footer>
+    <script type="module" src="firebase/search.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    /* outline:1px solid black; */
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    --secondaryclr: #ffffff;
+    --primaryclr: #1a4734;
+    --bg-color: #a5c5b7;
+    color: var(--primaryclr);
+}
+
+#profile-header{
+    height:100vh;
+    width:80%;
+    margin: 6rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#formm{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 2rem 4rem;
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+}
+
+#profile-head{
+    text-align: center;
+    background-color: #a5c5b7;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+
+#profile-head h2{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+#form-details{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#profile-head p{
+    font-size: 1rem;
+}
+
+#profile-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile{
+    margin: 1rem 2rem;
+    /* margin-right: 2rem; */
+}
+
+#profile {
+    position: relative;   
+    /* border-radius: 50%; */
+    /* border: 2px solid var(--primaryclr); */
+    height: 165px;
+    width: 165px;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    transition: all .3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#profile img{
+    position: absolute;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 0;
+    height: 165px;
+    width:165px;
+    /* border:0.2rem solid var(--primaryclr); */
+}
+
+#profile:hover {
+    /* background-color: rgba(0,0,0,.5);
+    z-index: 10000; */
+    color: #fff;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+ .profile-pic span {
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+} 
+
+#removeimg{
+    background-color: var(--primaryclr);
+    color: var(--secondaryclr);
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    width: fit-content;
+     padding: 0.5rem 2.5rem;
+     cursor: pointer;
+    margin: 0.5rem;
+}
+
+#-label{
+    padding-top: 1rem;
+    z-index: 10000;
+    height:165px;
+    width: 165px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#-label:hover{
+    z-index: 10000;
+    background-color: rgba(0,0,0,.8);
+}
+
+#formm input[type="file"] {
+    display: none;
+    cursor: pointer;
+ }
+
+#entry-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+#form-inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+#form-labels{
+    margin: 1.2rem 0;
+    font-size: 1.2rem;
+}
+
+#form-input{
+    height:2.5rem;
+    width:18rem;
+    margin: 0;
+    outline: 0;
+    border-bottom: 2px solid var(--primaryclr);
+    padding: 0 0.5rem;
+    font-size: 1rem;
+}
+
+#full-name, #address{
+    display: flex;
+    gap:2rem;
+    margin-top: 1rem;
+}
+
+#form-radio{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="radio"]{
+    width:1rem;
+    height: 1rem;
+    background-color: var(--bg-color);
+    color: var(--bg-color);
+}
+
+#form-radio div{
+    display: flex;
+    gap:1rem;
+}
+
+#form-radio img{
+    height: 4rem;
+}
+
+textarea{
+    border: 2px solid var(--primaryclr);
+    background-color: transparent; 
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+#submit-btn{
+    width:40%;
+    font-size: 1rem;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    background-color: var(--primaryclr);
+    color: var(--secondaryclr);
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+#submit-btn:hover{
+    background-color: var(--bg-color);
+    color: black;
+}
+
+ @media screen and (max-width:650px){
+    #profile-head{
+        padding: 0.5rem;
+    }   
+    #full-name,#address{
+        flex-wrap: wrap;
+    }
+    #profile-head h2{
+        font-size: 2rem;
+    }
+    #profile img{
+        height: 130px;
+        width:130px;
+    }
+ }
+
+ @media screen and (max-width:550px) {
+    #profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    #profile-header{
+        margin: 6rem 2rem 2rem 2rem;
+    }
+
+    #formm{
+        padding: 2rem 1rem;
+        min-width: 100%;
+
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    #profile-head{
+        /* width:90%; */
+        padding: 0.5rem 0.2rem;
+    } 
+
+    textarea{
+        max-width: 90%;
+    }
+
+    #form-inputs{
+        width: 100%;
+    }
+
+    #form-input{
+        height:2.5rem;
+        width:15rem;
+    }
+
+    #full-name,#address{
+        flex-direction: column;
+    }
+
+    #submit-btn{
+        width:80%;
+        margin: 1rem 0;
+    }
+}
